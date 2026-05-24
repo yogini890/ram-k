@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --brand-primary: #1a2e44;
+  --brand-accent: #c8963e;
+  --brand-light: #f5f0e8;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-white text-gray-900;
+    font-family: 'Inter', sans-serif;
+  }
+}
+
+@layer utilities {
+  .text-brand-primary { color: #1a2e44; }
+  .text-brand-accent { color: #c8963e; }
+  .bg-brand-primary { background-color: #1a2e44; }
+  .bg-brand-accent { background-color: #c8963e; }
+  .bg-brand-light { background-color: #f5f0e8; }
+  .border-brand-accent { border-color: #c8963e; }
+  .hover\:bg-brand-accent:hover { background-color: #c8963e; }
+  .hover\:text-brand-accent:hover { color: #c8963e; }
+}
